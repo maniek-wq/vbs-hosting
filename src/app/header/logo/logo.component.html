@@ -1,0 +1,34 @@
+<div class="logo-name-container d-flex">
+  <div class="logo-container">
+    <div class="d-flex logo-club">
+      <img class="logo-img" [src]="logoUrl" />
+      <input
+        class="club-input"
+        type="text"
+        placeholder="wprowadź nazwe klubu"
+      />
+    </div>
+    <div class="input-group-sm d-flex">
+      <input
+        type="file"
+        class="form-control"
+        id="inputGroupFile04"
+        (change)="onFileSelected($event)"
+        accept="image/*"
+        aria-describedby="inputGroupFileAddon04"
+        aria-label="Upload"
+        *ngIf="hideInput"
+      />
+      <button
+        class="btn btn-outline-secondary"
+        type="button"
+        id="inputGroupFileAddon04"
+        
+        *ngIf="hideInput"
+        (click)="hideButton()"
+      >
+        Submit
+      </button>
+    </div>
+  </div>
+</div>

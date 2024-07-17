@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'hosting-vbs' title`, () => {
+  it(`should have the 'VB-Statistics' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('hosting-vbs');
+    expect(app.title).toEqual('VB-Statistics');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, hosting-vbs');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, VB-Statistics');
   });
 });

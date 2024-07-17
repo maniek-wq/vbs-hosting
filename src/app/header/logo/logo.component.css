@@ -1,0 +1,33 @@
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.logo-club {
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 5px;
+}
+#fileInput {
+  align-self: center;
+
+  width: 100px;
+}
+
+#inputGroupFile04 {
+  width: 90px;
+}
+
+.input-group-sm {
+  gap: 5px;
+}
+
+.club-input {
+  border: none;
+}

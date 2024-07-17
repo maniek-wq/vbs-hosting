@@ -1,0 +1,17 @@
+<div class="row">
+  <input type="text" class="col col-1" />
+  <input type="text" class="col"[ngClass]="{'col-5': isFinished, 'col-6': !isFinished}" />
+  <input type="text" class="col col-2" />
+  <input type="text" class="col col-2" />
+  <input type="text" class="col col-1" />
+
+  <button
+    type="button"
+    class="btn col col-1"
+    [class.btn-danger]="true"
+    (click)="removeRow()"
+    *ngIf="isFinished"
+  >
+    X
+  </button>
+</div>

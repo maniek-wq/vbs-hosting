@@ -1,0 +1,12 @@
+<div class="controls" *ngIf="isFinished">
+  <button type="button" class="btn btn-danger btn-sm"(click)="clearCanvas(0)">Wyczyść</button>
+  <input type="color" (change)="changeColor($event)" value="red">
+  <button type="button" class="btn btn-danger btn-sm"(click)="clearCanvas(1)">Wyczyść</button>
+</div>
+<input type="text" class="pitch-input">
+<div class="container pitch-container d-flex">
+    
+    <canvas #canvas height="240" width="160" > 
+    </canvas>
+    <canvas #canvas height="240" width="160"> </canvas>
+</div>

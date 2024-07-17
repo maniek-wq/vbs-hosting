@@ -1,0 +1,17 @@
+ <div class="main-container mt-4 d-flex">
+    
+         <div class="left">
+            <input type="text" placeholder="Data, godzina, miejsce...">
+        </div> 
+
+        <div class="right">
+            <input type="text" placeholder="Runda" class="round">
+            <div>
+                <input type="file" (change)="onFileSelected($event)" accept="image/*" class="input-img-button" *ngIf="isFinished">
+                <img class="logo-img" [src]="logoUrl" />
+            </div>
+        </div> 
+   
+
+</div>
+
